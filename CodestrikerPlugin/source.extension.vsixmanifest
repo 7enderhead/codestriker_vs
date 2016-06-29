@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="CodestrikerIntegration.FH-Hagenberg.dbbb4179-ee4c-444e-9550-61d38825dee1" Version="1.0" Language="en-US" Publisher="FH-Hagenberg" />
+    <DisplayName>Codestriker Integration</DisplayName>
+    <Description xml:space="preserve">The Visual Studio Codestriker Plugin provides an easy way to create new topics on your Codestriker Server of a TFS Shelvesets. If there is a running TFS connection inside your Visual Studio, the Codestriker Integration Window shows the user's shelvesets. The user can now start creating topics on a Codestriker server. The Codestriker endpoint is configured in the extension's options.</Description>
+    <License>gpl-3.0.txt</License>
+    <Icon>Resources\pluginIcon.ico</Icon>
+    <PreviewImage>Resources\pluginIcon.ico</PreviewImage>
+    <Tags>codestriker, vs-plugin</Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Enterprise" />
+    <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Pro" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    <Dependency Id="Microsoft.VisualStudio.MPF.14.0" DisplayName="Visual Studio MPF 14.0" d:Source="Installed" Version="[14.0]" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+  </Assets>
+</PackageManifest>
